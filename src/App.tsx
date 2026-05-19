@@ -175,8 +175,13 @@ export default function App() {
                 transition={{ delay: i * 0.04 }}
                 className={`flex flex-col items-center flex-1 min-w-[62px] lg:min-w-0 group px-1 ${i >= 5 ? 'hidden lg:flex' : 'flex'}`}
               >
-                <span className="text-[10px] font-semibold text-slate-900 uppercase mb-1 tracking-tight">{item.time}</span>
-                <span className="text-2xl group-hover:scale-110 transition-transform cursor-default drop-shadow-sm">{item.emoji}</span>
+                <span className="text-[10px] font-semibold text-slate-800 uppercase mb-1.5 tracking-tight opacity-70">{item.time}</span>
+                <div className="relative flex items-center justify-center">
+                  <div className="absolute inset-0 bg-white/40 blur-md rounded-full scale-150 group-hover:bg-white/60 transition-colors" />
+                  <span className="text-3xl relative z-10 group-hover:scale-125 transition-transform duration-300 cursor-default drop-shadow-[0_2px_4px_rgba(0,0,0,0.1)] filter saturate-[1.2]">
+                    {item.emoji}
+                  </span>
+                </div>
               </motion.div>
             ))}
           </div>
