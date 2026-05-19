@@ -1,0 +1,6 @@
+{
+  "name": "Weather Banner Widget",
+  "description": "A responsive weather widget showing DMV area forecast.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
